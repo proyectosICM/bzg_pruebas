@@ -2,7 +2,7 @@ import asyncio
 import websockets
 import json
 
-API_URL = "ws://192.168.0.204:7787/ws"
+API_URL = "ws://192.168.0.204:7788/ws"
 
 
 async def safe_close(ws, label="socket"):
@@ -80,8 +80,8 @@ async def handle_device_connection(device_ws):
 
 
 async def main():
-    print("🚀 Servidor puente escuchando en ws://0.0.0.0:7789")
-    async with websockets.serve(handle_device_connection, "0.0.0.0", 7789):
+    print("🚀 Servidor puente escuchando en ws://0.0.0.0:7787")
+    async with websockets.serve(handle_device_connection, "0.0.0.0", 7787):
         await asyncio.Future()  # Mantener servidor vivo
 
 
