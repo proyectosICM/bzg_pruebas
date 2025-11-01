@@ -2,7 +2,7 @@ import asyncio
 import websockets
 import json
 
-API_URL = "ws://192.168.0.204:7788/ws"
+API_URL = "ws://192.168.0.204:7787/ws"
 
 
 async def safe_close(ws, label="socket"):
