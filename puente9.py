@@ -80,8 +80,8 @@ async def handle_device_connection(device_ws):
 
 
 async def main():
-    print("🚀 Servidor puente escuchando en ws://0.0.0.0:7787")
-    async with websockets.serve(handle_device_connection, "0.0.0.0", 7787):
+    print("🚀 Servidor puente escuchando en ws://0.0.0.0:7789")
+    async with websockets.serve(handle_device_connection, "0.0.0.0", 7789):
         await asyncio.Future()  # Mantener servidor vivo
 
 
